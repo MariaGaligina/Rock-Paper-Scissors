@@ -1,0 +1,168 @@
+body {
+  color: rgb(81, 63, 38);
+  user-select: none;
+}
+
+.wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+}
+
+.game-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(250, 235, 215);
+}
+.game-content > div {
+  width: 50vmin;
+  height: 50vmin;
+  padding: 5vmin;
+  border: solid rgb(192, 164, 124) 2px;
+  background: rgba(241, 216, 182, 0.607);
+  border-radius: 1vmin;
+  margin: auto;
+  margin-top: 15vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.game-content .start-block .screensaver {
+  width: 30vmin;
+  height: 30vmin;
+  background-color: rgb(250, 235, 215);
+  border-radius: 1vmin;
+  border: solid rgb(192, 164, 124) 2px;
+}
+.game-content .start-block .screensaver img {
+  border-radius: 1vmin;
+  width: 100%;
+  height: 100%;
+}
+.game-content .main-game-block .game-actions {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.game-content .main-game-block p {
+  align-self: center;
+  font-size: 4vmin;
+}
+.game-content .main-game-block .game-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+}
+.game-content .statistic {
+  /*p {
+  	display: block;
+  	width: fit-content;
+  	border: solid grey 2px;
+  	//margin: auto;
+  }*/
+}
+.game-content .statistic .game-text {
+  font-size: 4vmin;
+}
+.game-content .statistic .game-actions-statistic {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.game-content .statistic .game-actions-statistic p {
+  align-self: center;
+  font-size: 3vmin;
+}
+.game-content .statistic .game-actions-statistic .btn-game-choose {
+  border: solid rgb(192, 164, 124) 2px;
+  background: rgb(250, 235, 215);
+}
+.game-content .statistic .game-statistic {
+  width: 20vmin;
+}
+.game-content .statistic .game-statistic p {
+  font-size: 2.5vmin;
+}
+.game-content .statistic .game-statistic p .text {
+  display: inline-block;
+  width: 16vmin;
+}
+
+.main {
+  z-index: 1;
+}
+
+.modal-open {
+  display: block;
+  z-index: 2;
+}
+
+.modal-close {
+  display: none;
+}
+
+.btn-game {
+  width: 12vmin;
+  height: 12vmin;
+  border-radius: 1vmin;
+}
+.btn-game img {
+  width: 100%;
+  height: 100%;
+}
+.btn-game:hover {
+  filter: brightness(115%);
+  cursor: pointer;
+}
+
+.btn-game-choose {
+  width: 16vmin;
+  height: 16vmin;
+  border-radius: 1vmin;
+}
+.btn-game-choose img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  width: fit-content;
+  height: 5vmin;
+  border: solid rgb(192, 164, 124) 2px;
+  background: rgb(250, 235, 215);
+  border-radius: 1vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vmin;
+}
+.btn:hover {
+  background: rgb(192, 164, 124);
+}
+
+.btn-modal {
+  width: fit-content;
+  height: fit-content;
+  padding: 1.5vmin;
+}
+
+.start {
+  width: 30vmin;
+  height: 10vmin;
+}
+
+/*# sourceMappingURL=style.css.map */

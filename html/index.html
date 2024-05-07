@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>RPS</title>
+	</head>
+	<body>
+		<div id="wrapper" class="wrapper">
+			<div class="game">
+				<div class="game-content modal-out modal-open" id="start">
+					<div class="start-block">
+						<div class="screensaver" id="screensaver">
+							<img src="../images/rock-paper-scissors.png" alt="not found" />
+						</div>
+						<div class="btn-modal btn start" id="start-btn">Старт</div>
+					</div>
+				</div>
+
+				<div class="game-content main">
+					<div class="main-game-block">
+						<div class="game-actions">
+							<div class="btn-game-choose" id="selected-player">
+								<img src="../images/icons8-вопросительный-знак-100.png" alt="not found" />
+							</div>
+							<p>vs</p>
+							<div class="btn-game-choose" id="selected-program">
+								<img src="../images/icons8-вопросительный-знак-100.png" alt="not found" />
+							</div>
+						</div>
+						<p>Выберите жест:</p>
+						<div class="game-buttons" id="game-buttons">
+							<div class="btn-game" id="rock">
+								<img src="../images/icons8-hand-rock-96.png" alt="not found" />
+							</div>
+							<div class="btn-game" id="paper">
+								<img src="../images/icons8-hand-96.png" alt="not found" />
+							</div>
+							<div class="btn-game" id="scissors">
+								<img src="../images/icons8-hand-scissors-96.png" alt="not found" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game-content modal-out modal-close" id="statistic">
+					<div class="statistic">
+						<span class="game-text" id="result">Статитика</span>
+						<div class="game-actions-statistic" id="result-actions">
+							<div class="btn-game-choose" id="selected-player-result">
+								<img src="../images/icons8-вопросительный-знак-100.png" alt="not found" />
+							</div>
+							<p>vs</p>
+							<div class="btn-game-choose" id="selected-program-result">
+								<img src="../images/icons8-вопросительный-знак-100.png" alt="not found" />
+							</div>
+						</div>
+						<div class="game-statistic">
+							<p>
+								<span class="text">Побед:</span>
+								<span class="win" id="win">0</span>
+							</p>
+
+							<p>
+								<span class="text">Поражений:</span>
+								<span class="loss" id="loss">0</span>
+							</p>
+
+							<p>
+								<span class="text">Ничья:</span>
+								<span class="draw" id="draw">0</span>
+							</p>
+						</div>
+						<div class="btn btn-modal refresh" id="refresh-btn">Ещё раунд</div>
+						<div class="btn btn-modal finish" id="finish-btn">Завершить игру</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="../js/script.js"></script>
+	</body>
+</html>
